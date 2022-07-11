@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import Ternary from "./Ternary";
+import FindDom from "./FindDom";
 class App extends React.Component {
   constructor() {
     super();
@@ -19,7 +20,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <p>sdfdsf</p>
-        <Ternary />
+        <Ternary name={this.state.data[0].name} />
+        <FindDom/>
         <StudentDetails />
         <ul>
         {this.state.data.map((item) => (
