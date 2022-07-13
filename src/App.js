@@ -7,7 +7,9 @@ import About from "./About";
 import TT from "./Contact";
 import Notfound from './404'  
 import Hooks from './Hooks'
+
 import { Route, Routes,Link,NavLink, Switch, BrowserRouter as Router } from 'react-router-dom'  
+import StyleCom from "./components/style/Style";
 class App extends React.Component {
   constructor() {
     super();
@@ -25,20 +27,23 @@ class App extends React.Component {
   render() {
     return (
       <Router> 
-        <ul>  
-        <li>  
-          <NavLink to="/" exact activeClassName="active">Home</NavLink>  
-        </li>  
-        <li>  
-          <NavLink to="/about" exact activeClassName="active">About</NavLink>  
-        </li>  
-        <li>  
-          <NavLink to="/contact" exact activeClassName="active">Contact</NavLink>  
-        </li>  
-        <li>  
-          <NavLink to="/hooks" exact activeClassName="active">Hooks</NavLink>  
-        </li> 
-      </ul>  
+        <ul className="nav">  
+          <li>  
+            <NavLink to="/" exact activeClassName="active">Home</NavLink>  
+          </li>  
+          <li>  
+            <NavLink to="/about" exact activeClassName="active">About</NavLink>  
+          </li>  
+          <li>  
+            <NavLink to="/contact" exact activeClassName="active">Contact</NavLink>  
+          </li>  
+          <li>  
+            <NavLink to="/hooks" exact activeClassName="active">Hooks</NavLink>  
+          </li> 
+          <li>  
+            <NavLink to="/style" exact activeClassName="active">React CSS</NavLink>  
+          </li> 
+        </ul>  
         <Routes>
           {/* <div className="App">
             <Form/>
@@ -54,6 +59,7 @@ class App extends React.Component {
           </div> */}
           <Route exact  path="/" element={<TT />} />  
           <Route path="/about" element={<About/>} />
+          <Route path="/style" element={<StyleCom/>} />
           <Route path="/hooks" element={<Hooks/>} />    
           <Route path="*" element={<Notfound/>}/>
         </Routes>
