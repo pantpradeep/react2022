@@ -7,7 +7,9 @@ import About from "./About";
 import TT from "./Contact";
 import Notfound from './404'  
 import Hooks from './Hooks'
-
+import Main from './components/Main'
+import ClassCom from './components/class/Class';
+import FuncCOm from './components/function/Function'
 import { Route, Routes,Link,NavLink, Switch, BrowserRouter as Router } from 'react-router-dom'  
 import StyleCom from "./components/style/Style";
 class App extends React.Component {
@@ -35,6 +37,9 @@ class App extends React.Component {
             <NavLink to="/about" exact activeClassName="active">About</NavLink>  
           </li>  
           <li>  
+            <NavLink to="/main" exact activeClassName="active">Components</NavLink>  
+          </li> 
+          <li>  
             <NavLink to="/contact" exact activeClassName="active">Contact</NavLink>  
           </li>  
           <li>  
@@ -61,6 +66,9 @@ class App extends React.Component {
           <Route path="/about" element={<About/>} />
           <Route path="/style" element={<StyleCom/>} />
           <Route path="/hooks" element={<Hooks/>} />    
+          <Route path="/main" element={<Main/>} />    
+          <Route path="/class-url" element={<ClassCom/>}/>
+          <Route path="/function-url" element={<FuncCOm/>}/>
           <Route path="*" element={<Notfound/>}/>
         </Routes>
       </Router> 
