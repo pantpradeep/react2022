@@ -4,6 +4,7 @@ import Ternary from "./Ternary";
 import FindDom from "./FindDom";
 import Form from "./Form";
 import About from "./About";
+import Home from "./components/Home";
 import TT from "./Contact";
 import Notfound from './404'  
 import Hooks from './Hooks'
@@ -34,11 +35,12 @@ class App extends React.Component {
             <NavLink to="/" exact activeClassName="active">Home</NavLink>  
           </li>  
           <li>  
+            <NavLink to="/main" exact activeClassName="active">Components</NavLink>  
+          </li>
+          <li>  
             <NavLink to="/about" exact activeClassName="active">About</NavLink>  
           </li>  
-          <li>  
-            <NavLink to="/main" exact activeClassName="active">Components</NavLink>  
-          </li> 
+          
           <li>  
             <NavLink to="/contact" exact activeClassName="active">Contact</NavLink>  
           </li>  
@@ -62,7 +64,7 @@ class App extends React.Component {
             ))}
             </ul>
           </div> */}
-          <Route exact  path="/" element={<TT />} />  
+          <Route exact  path="/" element={<Home />} />  
           <Route path="/about" element={<About/>} />
           <Route path="/style" element={<StyleCom/>} />
           <Route path="/hooks" element={<Hooks/>} />    
