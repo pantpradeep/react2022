@@ -32,23 +32,23 @@ class App extends React.Component {
       <Router> 
         <ul className="nav">  
           <li>  
-            <NavLink to="/" exact activeClassName="active">Home</NavLink>  
+            <NavLink to="/" exact activeclassname="active">Home</NavLink>  
           </li>  
           <li>  
-            <NavLink to="/main" exact activeClassName="active">Components</NavLink>  
+            <NavLink to="/main" exact activeclassname="active">Components</NavLink>  
           </li>
           <li>  
-            <NavLink to="/about" exact activeClassName="active">About</NavLink>  
+            <NavLink to="/about" exact activeclassname="active">About</NavLink>  
           </li>  
           
           <li>  
-            <NavLink to="/contact" exact activeClassName="active">Contact</NavLink>  
+            <NavLink to="/contact" exact activeclassname="active">Contact</NavLink>  
           </li>  
           <li>  
-            <NavLink to="/hooks" exact activeClassName="active">Hooks</NavLink>  
+            <NavLink to="/hooks" exact activeclassname="active">Hooks</NavLink>  
           </li> 
           <li>  
-            <NavLink to="/style" exact activeClassName="active">React CSS</NavLink>  
+            <NavLink to="/style" exact activeclassname="active">React CSS</NavLink>  
           </li> 
         </ul>  
         <Routes>
@@ -64,7 +64,7 @@ class App extends React.Component {
             ))}
             </ul>
           </div> */}
-          <Route exact  path="/" element={<Home />} />  
+          <Route exact="true" path="/" element={<Home />} />  
           <Route path="/about" element={<About/>} />
           <Route path="/style" element={<StyleCom/>} />
           <Route path="/hooks" element={<Hooks/>} />    
