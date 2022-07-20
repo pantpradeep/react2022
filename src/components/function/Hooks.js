@@ -1,5 +1,6 @@
 import React, { useState, useEffect  } from "react";
-
+import UseStateArray from "./UseStateArray";
+import UseStateObject from "./UseStateObject";
 const Hooks = () => {
     // var val = 'pradeep';
     // const changeName = () => {
@@ -21,10 +22,11 @@ const Hooks = () => {
             {/* <h1>Name: { val }</h1> */}
             {/* <button onClick={changeName}>Change name</button> */}
 
-            {/* <p>here we are changing text by useState</p> 
-            <p>Name: <strong>{ myName }</strong></p> */}
-            {/* <button onClick={changeName}>Click me to change name</button>  */}
-
+            {/* <p>here we are changing text by useState</p>  */}
+            <p>Name: <strong>{ myName }</strong></p> 
+            <button onClick={changeName}>Click me to change name</button>
+            <UseStateArray/>
+            <UseStateObject/>
 
         </div>
     )
