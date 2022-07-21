@@ -1,5 +1,7 @@
 body{
   padding:20px 100px;
+  background-color: #282c34;
+  color:#fff;
 }
 .App-logo {
   height: 40vmin;
@@ -82,4 +84,28 @@ p{
 }
 .block p{
   margin-bottom: 10px;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo{
+  background-color: #fff;
+ display: inline-flex;
+ color:#2c2c2c;
+ padding:10px 10px;
+ border-radius: 20px;
+ min-width: 300px;
+}
+
+button{
+  background-color: #61dafb;
+  color:#2c2c2c;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-color: #61dafb;
+  border-radius: 20px;
+  min-width: 150px
 }

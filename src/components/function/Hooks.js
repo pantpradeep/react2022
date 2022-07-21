@@ -1,5 +1,5 @@
 import React, { useState, useEffect  } from "react";
-import UseStateArray from "./UseStateArray";
+import UseStateArray from "./UseStateArrayCopy";
 import UseStateObject from "./UseStateObject";
 const Hooks = () => {
     // var val = 'pradeep';
@@ -15,7 +15,7 @@ const Hooks = () => {
        setMyName('Seema Jauhari');
     }
     useEffect(() => {
-        console.log("1")
+        console.log("test")
       }, []);
     return (
         <div>
@@ -25,8 +25,10 @@ const Hooks = () => {
             {/* <p>here we are changing text by useState</p>  */}
             <p>Name: <strong>{ myName }</strong></p> 
             <button onClick={changeName}>Click me to change name</button>
+            <div className="flex">
             <UseStateArray/>
             <UseStateObject/>
+            </div>
 
         </div>
     )
