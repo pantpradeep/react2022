@@ -1,6 +1,7 @@
 import React, { useState, useEffect  } from "react";
 import UseStateArray from "./UseStateArrayCopy";
 import UseStateObject from "./UseStateObject";
+import UseEffect1 from "../useEffect/useEffect1";
 const Hooks = () => {
     // var val = 'pradeep';
     // const changeName = () => {
@@ -28,6 +29,7 @@ const Hooks = () => {
             <div className="flex">
             <UseStateArray/>
             <UseStateObject/>
+            <UseEffect1/>
             </div>
 
         </div>
